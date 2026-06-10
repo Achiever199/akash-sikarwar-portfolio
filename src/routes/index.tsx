@@ -166,7 +166,7 @@ function Hero() {
               <a href="#contact" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium text-primary-foreground bg-gradient-to-r from-primary to-accent glow-ring hover:scale-[1.02] transition">
                 <Mail className="h-4 w-4" /> Contact Me
               </a>
-              <a href="/src/assets/Akash_Resume.pdf" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
+              <a href="/Akash_Resume.pdf" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
                 <Download className="h-4 w-4" /> Download Resume
               </a>
               <a href="https://github.com/Achiever199" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
