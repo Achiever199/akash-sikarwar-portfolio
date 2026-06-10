@@ -166,15 +166,21 @@ function Hero() {
               <a href="#contact" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium text-primary-foreground bg-gradient-to-r from-primary to-accent glow-ring hover:scale-[1.02] transition">
                 <Mail className="h-4 w-4" /> Contact Me
               </a>
-              <a href="/Akash_resume.pdf" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
+              <a href="/src/assets/Akash_Resume.pdf" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
                 <Download className="h-4 w-4" /> Download Resume
               </a>
-              <a href="https://github.com/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
+              <a href="https://github.com/Achiever199" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
                 <Github className="h-4 w-4" /> GitHub
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
+              <a href="https://www.linkedin.com/in/akash-sikarwar-aa7177327/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
                 <Linkedin className="h-4 w-4" /> LinkedIn
               </a>
+               <a href="https://leetcode.com/u/Akash_sikarwar/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium glass hover:bg-white/10 transition">
+  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.7a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+  </svg>
+  LeetCode
+</a>
             </div>
           </Reveal>
         </div>
@@ -378,6 +384,19 @@ function Projects() {
       tech: ["Python", "Streamlit", "Pandas", "NumPy", "Scikit-learn", "ML"],
       features: ["Pollution analytics dashboard", "PM2.5 prediction", "Interactive visualizations", "Multi-city trends"],
       icon: Brain,
+      github: "https://github.com/Achiever199/Smart-Air-Guardian",  // replace with your actual link
+      demo: " https://smart-air-guardian-fymtzvmkhdrkch9hjb5nbv.streamlit.app/",          // repl
+      
+    },
+
+    {
+      title: "WhistleVerse",
+      desc: "A full-stack IPL fan platform featuring live match tracking, team analytics, player statistics, prediction games, and CSK-themed fan experiences.",
+      tech: ["React.js", "Vite", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Axios", "Vercel"],
+      features: ["Live match tracking", "Team & player analytics", "Prediction leaderboards", "RESTful API backend"],
+      icon: Rocket,
+      github: "https://github.com/Achiever199/whistleverse-live",  // replace with your actual link
+      demo: "https://whistleverse-live-n97kvep10-achiever199s-projects.vercel.app",          // replace with your actual link
     },
     {
       title: "Smart AI Quote Generator",
@@ -385,6 +404,8 @@ function Projects() {
       tech: ["React.js", "JavaScript", "Vite", "LocalStorage", "Vercel"],
       features: ["Real-time search", "Category filtering", "Dark/light mode", "Favorites system"],
       icon: Sparkles,
+      github: "https://github.com/Achiever199/smart-ai-quote-generator",  // replace with your actual link
+      demo: "https://smart-ai-quote-generator-p5i4bkc6g-achiever199s-projects.vercel.app",     
     },
   ];
   return (
@@ -413,12 +434,12 @@ function Projects() {
                   ))}
                 </ul>
                 <div className="mt-6 flex gap-3">
-                  <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition">
-                    <Globe className="h-4 w-4" /> Live Demo
-                  </a>
-                  <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium glass hover:bg-white/10 transition">
-                    <Github className="h-4 w-4" /> Code
-                  </a>
+                <a href={p.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition">
+  <Globe className="h-4 w-4" /> Live Demo
+</a>
+<a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium glass hover:bg-white/10 transition">
+  <Github className="h-4 w-4" /> Code
+</a>
                 </div>
               </div>
             </article>
@@ -572,9 +593,22 @@ function Contact() {
               </div>
             </div>
             <div className="flex gap-3 pt-2">
-              <a href="https://github.com/" target="_blank" rel="noreferrer" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition"><Github className="h-5 w-5" /></a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition"><Linkedin className="h-5 w-5" /></a>
-              <a href="mailto:sikarwarakash199@gmail.com" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition"><Mail className="h-5 w-5" /></a>
+              <a href="https://github.com/Achiever199" target="_blank" rel="noreferrer" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition"><Github className="h-5 w-5" /></a>
+              <a href="https://www.linkedin.com/in/akash-sikarwar-aa7177327/" target="_blank" rel="noreferrer" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition"><Linkedin className="h-5 w-5" /></a>
+              {/* <a href="mailto:sikarwarakash199@gmail.com" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition"><Mail className="h-5 w-5" /></a> */}
+               <a href="https://leetcode.com/u/Akash_sikarwar/" target="_blank" rel="noreferrer" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition">
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+      <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.7a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+    </svg>
+  </a>
+  <a href="https://www.codechef.com/users/aka_achiever09" target="_blank" rel="noreferrer" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition">
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+      <path d="M11.257 0C5.04 0 0 5.373 0 12s5.04 12 11.257 12c1.footprint 0 2.46-.23 3.545-.647l.232-.09v-2.537l-.528.22a8.755 8.755 0 0 1-3.249.625C5.596 21.57 2.37 17.24 2.37 12c0-5.24 3.226-9.571 8.887-9.571a8.74 8.74 0 0 1 3.249.625l.528.22V.737l-.232-.09A11.22 11.22 0 0 0 11.257 0zm5.27 7.921l-1.3 1.3-1.27-1.27 1.3-1.3zm-8.86.06L6.37 9.28 5.1 8.01l1.3-1.3zm4.43.45v1.84H10.26V8.43zm-4.52 2.47 1.27 1.27-1.3 1.3-1.27-1.27zm9.04 0 1.27 1.27-1.3 1.3-1.27-1.27zm-4.52.33h1.84v1.84h-1.84zm-4.43 2.56 1.3 1.3-1.27 1.27-1.3-1.3zm8.86 0 1.3 1.3-1.27 1.27-1.3-1.3zm-4.43.45v1.84H10.26v-1.84z"/>
+    </svg>
+  </a>
+  <a href="mailto:sikarwarakash199@gmail.com" className="h-11 w-11 grid place-items-center rounded-full glass hover:bg-primary/20 hover:text-primary transition">
+    <Mail className="h-5 w-5" />
+  </a>
             </div>
           </div>
         </Reveal>
@@ -621,8 +655,8 @@ function Footer() {
           ))}
         </nav>
         <div className="flex gap-3">
-          <a href="https://github.com/" target="_blank" rel="noreferrer" className="h-9 w-9 grid place-items-center rounded-full glass hover:text-primary transition"><Github className="h-4 w-4" /></a>
-          <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="h-9 w-9 grid place-items-center rounded-full glass hover:text-primary transition"><Linkedin className="h-4 w-4" /></a>
+          <a href="https://github.com/Achiever199" target="_blank" rel="noreferrer" className="h-9 w-9 grid place-items-center rounded-full glass hover:text-primary transition"><Github className="h-4 w-4" /></a>
+          <a href="https://www.linkedin.com/in/akash-sikarwar-aa7177327/" target="_blank" rel="noreferrer" className="h-9 w-9 grid place-items-center rounded-full glass hover:text-primary transition"><Linkedin className="h-4 w-4" /></a>
           <a href="mailto:sikarwarakash199@gmail.com" className="h-9 w-9 grid place-items-center rounded-full glass hover:text-primary transition"><Mail className="h-4 w-4" /></a>
         </div>
       </div>
